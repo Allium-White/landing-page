@@ -20,6 +20,7 @@ body {
     color: #eee;
     padding: 0 100px;
     flex-basis: 400px;
+    gap: 40px;
 }
 
 .header {
@@ -47,16 +48,17 @@ a {
 }
 
 .headerb {
-    display: flex;/* 
-    align-items: center; */
-    /* margin: 40px 0 55px 0; */
+    display: flex;
+    align-items: center;
     justify-content: space-between;
     gap: 40px;
-    margin: 55px 0;
 }
 
 .headerb .first {
-    flex-basis: 400px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 540px;
 }
 
 .first h1 {
@@ -67,16 +69,20 @@ a {
 
 button {
     background-color: #3882F6;
+    border: 1px solid #1F2937;
     color: #eee;
     padding: 5px 20px;
     border-radius: 10px;
+    width: 100px;
+    flex-basis: 20px;
 }
 
 .headerb .second {
-    border: 1px solid red;/* 
-    width: 400px; */
+    border: 1px solid red;
+    align-self: stretch;
+    flex: 1;
+    max-width: 430px;
     height: 200px;
-    flex-basis: 400px;
 }
 
 .first p {
@@ -104,22 +110,24 @@ button {
     justify-content: center;
 }
 
+.rando-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    gap: 8px;
+}
+
 .rando-info img {
     border: 3px solid #3882F6;
-    display: flex;
     height: 150px;
+    width: 150px;
     border-radius: 10px;
 }
 
 .rando-info .text {
     text-align: center;
 }
-
-/* .rando-info {
-    border: 1px solid red;
-    height: 100px;
-    width: 100px;
-} */
 
 .third-section {
     display: flex;
@@ -152,6 +160,8 @@ button {
     align-items: center;
     justify-content: space-between;
     color: #eee;
+    gap: 45px;
+    max-width: 800px;
 }
 
 .second button {
