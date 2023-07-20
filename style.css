@@ -50,7 +50,7 @@ a {
 .headerb {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 40px;
 }
 
@@ -77,12 +77,20 @@ button {
     flex-basis: 20px;
 }
 
+.headerb .second img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
 .headerb .second {
-    border: 1px solid red;
-    align-self: stretch;
-    flex: 1;
-    max-width: 430px;
+    display: flex; 
+/*     align-self: stretch;
+     flex: 1; */
+    width: 430px;
+    max-width: 480px;
     height: 200px;
+    flex: 1;
 }
 
 .first p {
@@ -134,6 +142,7 @@ button {
     flex-direction: column;
     flex-basis: 200px;
     justify-content: center;
+    align-items: center;
     background-color: #E5E7EB;
     padding: 0 200px;
 }
@@ -143,20 +152,30 @@ button {
     color: #1F2937;
     font-weight:lighter;
     font-style: italic;
+    max-width: 650px;
 }
 
 .third-section .second {
-    text-align: right;
+    width: 100%;
+    text-align: end;
     font-weight: bold;
+    max-width: 650px;
 }
 
 .fourth-section {
-    margin: 55px 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 55px 120px;
+}
+
+.cont {
+    /* margin: 55px 120px; */
     border-radius: 10px;
     background-color: #3882F6;
-    flex-basis: 100px;
+    flex-basis: 650px;
     display: flex;
-    padding: 10px 80px;
+    padding: 25px 80px;
     align-items: center;
     justify-content: space-between;
     color: #eee;
